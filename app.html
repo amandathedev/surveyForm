@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Survey Form</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!--   Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1 id="title">Account Registration</h1>
+  <div id="form-outer">
+    <p id="description">Tell us a little about you.</p>
+    <form id="survey-form">
+      <div class="rowTab">
+        <div class="labels">
+          <label id="name-label" for="name">* Full name: </label>
+        </div>
+        <div class="rightTab">
+          <input type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+        </div>
+      </div>
+
+      <div class="rowTab">
+        <div class="labels">
+          <label id="birthday-label" for="birthday">* Date of birth:</label>
+        </div>
+        <div class="rightTab">
+          <input type="date" name="birthday" id="birthday" class="input-field" required>
+        </div>
+      </div>
+
+      <div class="rowTab">
+        <div class="labels">
+          <label id="email-label" for="email">* Email address:</label>
+        </div>
+        <div class="rightTab">
+          <input type="email" name="email" id="email" class="input-field" placeholder="Enter yor email" required>
+        </div>
+      </div>
+
+      <div class="rowTab">
+        <div class="labels">
+          <label id="user-label" for="user">* User name:</label>
+        </div>
+        <div class="rightTab">
+          <input type="text" name="user" id="user" class="input-field" placeholder="Create a user name" required>
+        </div>
+      </div>
+
+      <div class="rowTab">
+        <div class="labels">
+          <label id="password-label" for="password">* Password: </label>
+        </div>
+        <div class="rightTab">
+          <input type="password" name="password" id="password" class="input-field" placeholder="Create a password"
+            required>
+        </div>
+      </div>
+
+      <div class="rowTab">
+        <div class="labels">
+          <label id="password-label2" for="password2">* Confirm password: </label>
+        </div>
+        <div class="rightTab">
+          <input type="password" name="password" id="password2" class="input-field" placeholder="Passwords must match"
+            required>
+        </div>
+      </div>
+
+      <div class="rowTab">
+        <div class="labels">
+          <label id="gender-label" for="gender">Gender: </label>
+        </div>
+        <div class="rightTab">
+          <ul id="gender">
+            <li class="radio"><label>Female<input name="radio-buttons" value="1" type="radio" class="gender"></label></li>
+            <li class="radio"><label>Male<input name="radio-buttons" value="2" type="radio" class="gender"></label></li>
+            <li class="radio"><label>Other<input name="radio-buttons" value="3" type="radio" class="gender"></label></li>
+            <li class="radio"><label>Prefer not to say<input name="radio-buttons" value="4" type="radio" class="gender"></label></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="rowTab">
+        <div class="labels">
+          <label id="pets-label" for="pets">What kind of pet do you have?</label>
+        </div>
+        <div class="rightTab">
+          <ul id="pets">
+            <li class="radio"><input name="checkboxes" value="1" type="checkbox" class="pets"><label>Dog</label></li>
+            <li class="radio"><input name="checkboxes" value="2" type="checkbox" class="pets"><label>Cat</label></li>
+            <li class="radio"><input name="checkboxes" value="3" type="checkbox" class="pets"><label>Fish</label></li>
+            <li class="radio"><input name="checkboxes" value="4" type="checkbox" class="pets"><label>Dragon</label></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="rowTab">
+        <div class="labels">
+          <label id="color-label" for="color">What's your favorite color? </label>
+        </div>
+        <div class="rightTab">
+          <input type="color" name="color" id="color" class="input-field">
+        </div>
+      </div>
+
+      <div id="rowTab">
+        <div class="labels">
+          <label id="upload-label" for="upload">Upload a file:</label>
+        </div>
+        <div class="rightTab">
+          <input type="file" name="upload" id="upload" class="input-field">
+        </div>
+      </div>
+
+      <div class="rowTab">
+        <div class="labels">
+          <label id="pizza-label" for="pizza">How many slices of pizza do you want?</label>
+        </div>
+        <div class="rightTab">
+          <ul id="pizza">
+            <li class="radio"><input name="pizza" value="1" type="radio" class="pizza"><label>1</label></li>
+            <li class="radio"><input name="pizza" value="2" type="radio" class="pizza"><label>2</label></li>
+            <li class="radio"><input name="pizza" value="3" type="radio" class="pizza"><label>3</label></li>
+            <li class="radio"><input name="pizza" value="4" type="radio" class="pizza"><label>4</label></li>
+            <li class="radio"><input name="pizza" value="5" type="radio" class="pizza"><label>5</label></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="rowTab">
+        <div class="labels">
+          <label id="slider-label" for="slider">Move this slider over:</label>
+        </div>
+        <div class="rightTab">
+          <input type="range" id="slider" name="slider" class="input-field" min="0" max="20">
+        </div>
+      </div>
+
+      <div class="rowTab">
+        <div class="labels">
+          <label id="referral-label" for="referral">How did you hear about us?</label>
+        </div>
+        <div class="rightTab">
+          <select name="referral" id="referral" name="referral" class="input-field">
+            <option value="select">Select one</option>
+            <option value="search-engine">Search Engine</option>
+            <option value="twitter">Twitter</option>
+            <option value="facebook">Facebook</option>
+            <option value="podcast">Podcast</option>
+            <option value="friend-family">Friends or Family</option>
+          </select>
+        </div>
+      </div>
+      <div id="form-buttons">
+        <input type="submit" id="submit" type="submit">
+        <input type="reset" id="reset" type="reset">
+      </div>
+  </div>
+  </form>
+  </div>
+
+  <script>
+    document.getElementById("survey-form").submit();
+  </script>
+</body>
